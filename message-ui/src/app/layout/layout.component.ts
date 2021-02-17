@@ -10,11 +10,11 @@ import { ScreenService } from '../screen.service';
 export class LayoutComponent implements OnInit {
 
   constructor(public screenService: ScreenService) {
-    console.log("scren width in layout component", this.screenService.screenWidth);
-    if (this.screenService.screenWidth < 1440) {
-      $('#side-nav').css('display', 'none');
-      $('#chat-area').css('display', 'none');
-    }
+    // console.log("scren width in layout component", this.screenService.screenWidth);
+    // if (this.screenService.screenWidth < 1440) {
+    //   $('#side-nav').css('display', 'none');
+    //   $('#chat-area').css('display', 'none');
+    // }
   }
 
   ngOnInit() {

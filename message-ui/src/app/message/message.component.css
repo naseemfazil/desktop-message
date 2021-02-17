@@ -34,5 +34,17 @@
 
 .text-secondary {
   color: #868686 !important;
+}
+
+.text {
   font-weight: 200;
+}
+
+@media (min-width: 320px) {
+  .messageDiv {
+    height: 60px !important;
+    width: 280px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
