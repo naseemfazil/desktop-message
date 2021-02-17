@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScreenService } from '../screen.service';
 
 @Component({
   selector: 'app-message',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MessageComponent implements OnInit {
 
-  constructor() { }
+  constructor(public screenService: ScreenService) {
+
+  }
+
   messages: Array<any> = [
     {
       isGroup: true,
@@ -15,7 +19,7 @@ export class MessageComponent implements OnInit {
       name: "Special class students",
       time: "18:31",
       lastMessage: "Pls take a look at this message",
-      profile: "fas fa-user",
+      profile: "https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200",
       isYou: false,
     },
     {
@@ -24,7 +28,7 @@ export class MessageComponent implements OnInit {
       name: "Don Norman",
       time: "16:04",
       lastMessage: "Hello guys, we discussed about..",
-      profile: "fas fa-user",
+      profile: "https://i.pravatar.cc/150?img=14",
       isYou: false,
     },
     {
@@ -33,7 +37,7 @@ export class MessageComponent implements OnInit {
       name: "Lee Williamson",
       time: "06:12",
       lastMessage: "Yes, that's goona work, hopefully.",
-      profile: "fas fa-user",
+      profile: "https://i.pravatar.cc/150?img=15",
       isYou: false,
     },
     {
@@ -42,7 +46,7 @@ export class MessageComponent implements OnInit {
       name: "Ronald Mccoy",
       time: "Yesterday",
       lastMessage: "Thanks Dude",
-      profile: "fas fa-user",
+      profile: "https://i.pravatar.cc/150?img=16",
       isYou: true,
     },
     {
@@ -51,7 +55,7 @@ export class MessageComponent implements OnInit {
       name: "Albert Bell",
       time: "Yesterday",
       lastMessage: "I'm happy this chapter has gree..",
-      profile: "fas fa-user",
+      profile: "https://i.pravatar.cc/150?img=17",
       isYou: false,
     },
     {
@@ -60,7 +64,7 @@ export class MessageComponent implements OnInit {
       name: "Ronald Mccoy",
       time: "Yesterday",
       lastMessage: "Thanks Dude",
-      profile: "fas fa-user",
+      profile: "https://i.pravatar.cc/150?img=18",
       isYou: true,
     },
     {
@@ -69,7 +73,7 @@ export class MessageComponent implements OnInit {
       name: "Albert Bell",
       time: "Yesterday",
       lastMessage: "I'm happy this chapter has gree..",
-      profile: "fas fa-user",
+      profile: "https://i.pravatar.cc/150?img=19",
       isYou: false,
     },
     {
@@ -78,7 +82,7 @@ export class MessageComponent implements OnInit {
       name: "Ronald Mccoy",
       time: "Yesterday",
       lastMessage: "Thanks Dude",
-      profile: "fas fa-user",
+      profile: "https://i.pravatar.cc/150?img=20",
       isYou: true,
     },
   ];

@@ -5,19 +5,22 @@
 
 .searchDiv {
   height: 40px;
-  width: 80%;
+  width: 93%;
   padding-left: 10px;
 }
+
 .messageDiv {
   height: 60px !important;
   width: 380px !important;
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .innerMessageDiv {
   width: 280px;
   margin-left: 15px !important;
 }
+
 .searchInput {
   height: 100% !important;
   width: 80% !important;
@@ -27,4 +30,9 @@
 
 .double_check {
   font-size: 10px;
+}
+
+.text-secondary {
+  color: #868686 !important;
+  font-weight: 200;
 }
